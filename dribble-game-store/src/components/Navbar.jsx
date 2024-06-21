@@ -211,7 +211,7 @@ export default function Navbar() {
           </div>
           <ul className="menu menu-vertical space-y-4 mt-4">
             <li>
-              <a className="font-semibold cursor-pointer hover:bg-gray-200 transition duration-300 flex flex-col">
+              <a className="font-semibold cursor-pointer transition duration-300 flex flex-col">
                 Find Designer
                 <ul className="ml-4 mt-2 space-y-2">
                   <li className="mb-4">
@@ -230,7 +230,7 @@ export default function Navbar() {
               </a>
             </li>
             <li className="mb-4">
-              <a className="font-semibold cursor-pointer hover:bg-gray-200 transition duration-300 flex flex-col">
+              <a className="font-semibold cursor-pointer transition duration-300 flex flex-col">
                 Courses
                 <ul className="ml-4 mt-2 space-y-2">
                   <li>
@@ -255,17 +255,17 @@ export default function Navbar() {
               </a>
             </li>
             <li className="mb-4">
-              <a className="font-semibold cursor-pointer hover:bg-gray-200 justify-center transition duration-300">
+              <a className="font-semibold cursor-pointer justify-center transition duration-300">
                 Jobs
               </a>
             </li>
             <li className="mb-4">
-              <a className="font-semibold justify-center cursor-pointer hover:bg-gray-200 transition duration-300">
+              <a className="font-semibold justify-center cursor-pointer transition duration-300">
                 Go Pro
               </a>
             </li>
             <li>
-              <a className="font-semibold justify-center cursor-pointer hover:bg-gray-200 transition duration-300">
+              <a className="font-semibold justify-center cursor-pointer transition duration-300">
                 Login
               </a>
             </li>

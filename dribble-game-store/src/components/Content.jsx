@@ -28,8 +28,8 @@ export default function Content() {
   }, []);
 
   return (
-    <div className="container p-0 mx-auto lg::w-3/4 lg:mx-auto lg:p-6">
-      <div className="w-full lg:w-3/4 bg-white mx-auto mb-0">
+    <div className="container p-0 mx-auto w-full lg:w-3/4 lg:mx-auto lg:p-6">
+      <div className="w-full  bg-white mx-auto mb-0">
         <h1 className="text-2xl font-bold text-center md:text-left">
           Game Store Website
         </h1>
@@ -37,7 +37,7 @@ export default function Content() {
         <div
           className={`bg-white p-4 flex items-center justify-between text-black rounded-t-lg ${
             isSticky
-              ? "sticky-navbar  shadow-md transition-all duration-300 ease-in-out z-100 h-10"
+              ? "sticky-navbar  shadow-md transition-all duration-300 ease-in-out z-100 h-auto"
               : ""
           }`}
           style={{ zIndex: 50, top: 0 }}
@@ -65,7 +65,7 @@ export default function Content() {
               </div>
             </div>
           </div>
-          <div className="flex items-center space-x-4">
+          <div className="flex  items-center space-x-4">
             <FontAwesomeIcon
               icon={faHeart}
               className="text-xl cursor-pointer duration-500 hover:text-red-400"
@@ -74,29 +74,37 @@ export default function Content() {
               icon={faSave}
               className="text-xl cursor-pointer hover:text-green-200 duration-500"
             />
+            <button className="hidden md:block rounded-full px-4 py-2 bg-slate-900 text-white hover:bg-slate-700 font-medium text-sm">
+              Get in touch
+            </button>
+
+            <FontAwesomeIcon
+              icon={faEnvelope}
+              className="text-xl md:hidden cursor-pointer hover:text-green-200 duration-500 "
+            />
           </div>
         </div>
       </div>
 
       <div className="flex flex-col items-center mt-8 md:mt-0 p-0">
-        <div className="w-full lg:w-3/4 pt-0">
+        <div className="w-full  pt-0">
           <img
             src="https://cdn.dribbble.com/userupload/2734363/file/original-35ffad088266109091572ef4cc186326.png?resize=1200x900"
             alt="GameUi"
-            className="w-full object-cover shadow-lg mb-4 md:rounded-lg"
+            className=" w-full object-cover shadow-lg mb-4 md:rounded-lg"
           />
-          <p className="my-4 text-lg md:w-3/4 text-center  mx-auto md:mt-24">
+          <p className="my-4 text-lg w-3/4 text-center  mx-auto md:mt-24">
             Each year gaming industry grows almost by 9 percent. With so many
             games available, it’s always nice to have a site where you can find
             detailed info about the latest releases and try them. We’d like to
             share our new concept of the web game store! Let’s explore it!
           </p>
-          <p className="my-4 text-lg md:w-3/4 text-center mx-auto">
+          <p className="my-4 text-lg w-3/4 text-center mx-auto">
             In the upper part of the page, there is a navigation bar. On the
             left, there are filters, while on the right there is a game poster
             and a list of product cards.
           </p>
-          <p className="my-4 text-lg md:w-3/4 text-center mx-auto md:mb-24">
+          <p className="my-4 text-lg w-3/4 text-center mx-auto md:mb-24">
             Each product card displays the product price, so users don’t have to
             click on them. An eye-catching UI and simple navigation will turn
             choosing and buying games into a real pleasure.
@@ -106,7 +114,7 @@ export default function Content() {
             alt="GameUi"
             className="w-full object-cover shadow-lg mb-4 mt-8 md:rounded-lg"
           />
-          <p className="my-4 md:mt-24 text-lg md:w-3/4 text-center mx-auto">
+          <p className="my-4 md:mt-24 text-lg w-3/4 text-center mx-auto">
             Keeping the background dark, we accented the main UI elements with
             orange. We chose this dark color palette because it matches the
             topic of computer games!
@@ -116,11 +124,11 @@ export default function Content() {
             alt="GameUi"
             className="w-full object-cover shadow-lg mb-4 md:rounded-lg md:mt-24"
           />
-          <p className="my-4 text-lg md:w-3/4 text-center mx-auto">
+          <p className="my-4 text-lg w-3/4 mt-20 text-center mx-auto">
             Have a project idea? We are available for new projects!
           </p>
 
-          <p className="my-4 text-lg text-center mx-auto md:w-3/4 flex flex-wrap justify-center">
+          <p className="my-4 text-lg text-center mx-auto w-3/4 flex flex-wrap justify-center">
             <a className="text-md cursor-pointer border-b-2 border-pink-500 mx-2">
               info@sanjay.com
             </a>
