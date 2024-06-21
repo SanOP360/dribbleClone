@@ -28,7 +28,7 @@ export default function Content() {
   }, []);
 
   return (
-    <div className="container p-0 mx-auto w-3/4 lg:mx-auto lg:p-6">
+    <div className="container p-0 mx-auto lg::w-3/4 lg:mx-auto lg:p-6">
       <div className="w-full lg:w-3/4 bg-white mx-auto mb-0">
         <h1 className="text-2xl font-bold text-center md:text-left">
           Game Store Website
