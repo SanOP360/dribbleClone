@@ -67,7 +67,7 @@ export default function Navbar() {
                   </summary>
                   {openDropdown === "designer" && (
                     <ul
-                      className="p-2 bg-base-100 absolute z-10 border mt-1 rounded-lg w-50"
+                      className="p-2 bg-base-100 absolute z-10 border mt-1 rounded-lg w-50 z-52"
                       onMouseEnter={() => handleMouseEnter("designer")}
                       onMouseLeave={handleMouseLeave}
                     >
@@ -106,7 +106,7 @@ export default function Navbar() {
                   </summary>
                   {openDropdown === "courses" && (
                     <ul
-                      className="p-2 bg-base-100 absolute z-10 border mt-1 mb-0 rounded-lg"
+                      className="p-2 bg-base-100 absolute z-10 border mt-1 mb-0 rounded-lg z-52"
                       onMouseEnter={() => handleMouseEnter("courses")}
                       onMouseLeave={handleMouseLeave}
                     >

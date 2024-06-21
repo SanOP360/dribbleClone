@@ -9,6 +9,7 @@ export default {
       borderColor: {
         "custom-gray": "gray",
       },
+      
     },
   },
   plugins: [require("daisyui")],

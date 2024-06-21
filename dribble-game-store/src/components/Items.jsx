@@ -44,13 +44,13 @@ function Items() {
       </div>
 
       <div className="my-8 md:my-40 flex justify-center text-xs space-x-3">
-        <div className="py-1 px-2.5 border rounded-sm shadow-left-bottom text-gray-400">
+        <div className="py-1 px-2.5 border rounded-sm shadow-left-bottom cursor-pointer text-gray-400">
           L
         </div>
-        <div className="py-1 px-2.5 border rounded-sm shadow-left-bottom text-gray-400">
+        <div className="py-1 px-2.5 border rounded-sm shadow-left-bottom text-gray-400 cursor-pointer">
           R
         </div>
-        <span className="flex items-center text-gray-500">Like</span>
+        <span className="flex items-center text-gray-500 cursor-pointer">Like</span>
       </div>
     </>
   );

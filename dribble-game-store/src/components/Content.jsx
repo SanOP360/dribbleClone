@@ -28,19 +28,16 @@ export default function Content() {
   }, []);
 
   return (
-    <div className="container p-0 mx-auto w-full lg:w-3/4 lg:mx-auto lg:p-6">
-      <div className="w-full  bg-white mx-auto mb-0">
-        <h1 className="text-2xl font-bold text-center md:text-left">
+    <div className="container p-0 mb-1 mx-auto w-full lg:w-3/4 lg:mx-auto lg:p-6">
+      <div className="w-full bg-white mx-auto mb-0">
+        <h1 className="text-2xl mb-2 font-bold text-center md:text-left">
           Game Store Website
         </h1>
 
         <div
           className={`bg-white p-4 flex items-center justify-between text-black rounded-t-lg ${
-            isSticky
-              ? "sticky-navbar  shadow-md transition-all duration-300 ease-in-out z-100 h-auto"
-              : ""
+            isSticky ? "sticky top-0 lg:h-20 z-4 shadow-md" : ""
           }`}
-          style={{ zIndex: 50, top: 0 }}
         >
           <div className="flex items-center">
             <img
@@ -65,7 +62,7 @@ export default function Content() {
               </div>
             </div>
           </div>
-          <div className="flex  items-center space-x-4">
+          <div className="flex items-center space-x-4">
             <FontAwesomeIcon
               icon={faHeart}
               className="text-xl cursor-pointer duration-500 hover:text-red-400"
@@ -80,20 +77,20 @@ export default function Content() {
 
             <FontAwesomeIcon
               icon={faEnvelope}
-              className="text-xl md:hidden cursor-pointer hover:text-green-200 duration-500 "
+              className="text-xl md:hidden cursor-pointer hover:text-green-200 duration-500"
             />
           </div>
         </div>
       </div>
 
       <div className="flex flex-col items-center mt-8 md:mt-0 p-0">
-        <div className="w-full  pt-0">
+        <div className="w-full pt-0">
           <img
             src="https://cdn.dribbble.com/userupload/2734363/file/original-35ffad088266109091572ef4cc186326.png?resize=1200x900"
             alt="GameUi"
-            className=" w-full object-cover shadow-lg mb-4 md:rounded-lg"
+            className="w-full object-cover shadow-lg mb-4 md:rounded-lg"
           />
-          <p className="my-4 text-lg w-3/4 text-center  mx-auto md:mt-24">
+          <p className="my-4 text-lg w-3/4 text-center mx-auto md:mt-24">
             Each year gaming industry grows almost by 9 percent. With so many
             games available, it’s always nice to have a site where you can find
             detailed info about the latest releases and try them. We’d like to
@@ -160,50 +157,20 @@ export default function Content() {
             className="w-full object-cover shadow-lg mb-4 md:rounded-lg md:mt-24"
           />
 
-          <div className="flex justify-center items-center space-x-4 my-4  ">
+          <div className="flex justify-center items-center space-x-4 my-4">
             <FontAwesomeIcon
               icon={faEnvelope}
               className="text-xl text-gray-500 cursor-pointer hover:text-pink-500"
             />
             <FontAwesomeIcon
               icon={faInfo}
-              className="text-xl  text-gray-500 cursor-pointer hover:text-purple-500"
+              className="text-xl text-gray-500 cursor-pointer hover:text-purple-500"
             />
             <FontAwesomeIcon
               icon={faDownload}
               className="text-xl text-gray-500 cursor-pointer hover:text-blue-500"
             />
-            <FontAwesomeIcon
-              icon={faHeart}
-              className="text-xl text-gray-500  cursor-pointer hover:text-red-400"
-            />
-            <FontAwesomeIcon
-              icon={faSave}
-              className="text-xl text-gray-500 cursor-pointer hover:text-green-200"
-            />
           </div>
-        </div>
-
-        <div className="relative w-full mt-24 flex items-center justify-center">
-          <hr className="border-black w-[85%]" style={{ opacity: "0.8" }} />
-
-          <div className="absolute inset-0 flex items-center justify-center">
-            <img
-              src="https://cdn.dribbble.com/users/4949363/avatars/small/606bb85ee728fd3d78bbddf7e70b3901.jpg?1676454777"
-              alt="Avatar"
-              className="w-18 h-18 object-cover rounded-full shadow-lg z-10"
-            />
-          </div>
-        </div>
-
-        <div className="mt-24 text-center">
-          <h1 className="text-2xl font-bold">Ronas IT | UI/UX Team</h1>
-          <p className="text-md text-gray-600">
-            We make complex applications simple for users🖤
-          </p>
-          <button className="my-4 py-2 px-8 bg-slate-950 text-white rounded-full focus:outline-none focus:ring-2 focus:ring-slate-300 hover:bg-slate-700">
-            Get in touch
-          </button>
         </div>
       </div>
     </div>
