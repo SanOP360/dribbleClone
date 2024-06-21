@@ -50,7 +50,7 @@ export default function Navbar() {
         </div>
 
         <div
-          className={`lg:flex navbar-start hidden lg:flex flex-col lg:flex-row lg:items-center transition-all duration-300 ${
+          className={` navbar-start hidden lg:flex flex-col lg:flex-row lg:items-center transition-all duration-300 ${
             menuOpen ? "block" : "hidden"
           }`}
         >
@@ -192,10 +192,6 @@ export default function Navbar() {
       {menuOpen && (
         <div className="lg:hidden fixed inset-0 bg-white z-50 p-4 overflow-y-auto">
           <div className="flex justify-between items-center">
-            <FaTimes
-              className="text-2xl text-slate-700 cursor-pointer"
-              onClick={toggleMenu}
-            />
             <h1
               className={`text-4xl text-slate-900 font-extrabold hover:text-slate-600 cursor-pointer transition duration-300 ${
                 menuOpen ? "text-center" : ""
@@ -208,6 +204,10 @@ export default function Navbar() {
             >
               Dribbble
             </h1>
+            <FaTimes
+              className="text-2xl text-slate-700 cursor-pointer"
+              onClick={toggleMenu}
+            />
           </div>
           <ul className="menu menu-vertical space-y-4 mt-4">
             <li>

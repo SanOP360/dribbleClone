@@ -28,16 +28,16 @@ export default function Content() {
   }, []);
 
   return (
-    <div className="container p-0 m-0 lg:mx-auto lg:p-6">
+    <div className="container p-0 mx-auto w-3/4 lg:mx-auto lg:p-6">
       <div className="w-full lg:w-3/4 bg-white mx-auto mb-0">
         <h1 className="text-2xl font-bold text-center md:text-left">
           Game Store Website
         </h1>
 
-        <nav
+        <div
           className={`bg-white p-4 flex items-center justify-between text-black rounded-t-lg ${
             isSticky
-              ? "sticky-navbar  shadow-md transition-all duration-300 ease-in-out z-100"
+              ? "sticky-navbar  shadow-md transition-all duration-300 ease-in-out z-100 h-10"
               : ""
           }`}
           style={{ zIndex: 50, top: 0 }}
@@ -75,7 +75,7 @@ export default function Content() {
               className="text-xl cursor-pointer hover:text-green-200 duration-500"
             />
           </div>
-        </nav>
+        </div>
       </div>
 
       <div className="flex flex-col items-center mt-8 md:mt-0 p-0">
@@ -120,28 +120,28 @@ export default function Content() {
             Have a project idea? We are available for new projects!
           </p>
 
-          <p className="my-4 text-lg text-center mx-auto flex flex-wrap">
-            <a className="text-md cursor-pointer border-b-2 border-pink-500 mx-2 hidden md:inline">
+          <p className="my-4 text-lg text-center mx-auto md:w-3/4 flex flex-wrap justify-center">
+            <a className="text-md cursor-pointer border-b-2 border-pink-500 mx-2">
               info@sanjay.com
             </a>
-            <span className="hidden md:inline">|</span>
-            <a className="text-md cursor-pointer border-b-2 border-pink-500 mx-2 hidden md:inline">
+            <span className="mx-2 hidden md:inline-block">|</span>
+            <a className="text-md cursor-pointer border-b-2 border-pink-500 mx-2">
               Facebook
             </a>
-            <span className="hidden md:inline">|</span>
-            <a className="text-md cursor-pointer border-b-2 border-pink-500 mx-2 hidden md:inline">
+            <span className="mx-2 hidden md:inline-block">|</span>
+            <a className="text-md cursor-pointer border-b-2 border-pink-500 mx-2">
               Telegram
             </a>
-            <span className="hidden md:inline">|</span>
-            <a className="text-md cursor-pointer border-b-2 border-pink-500 mx-2 hidden md:inline">
+            <span className="mx-2 hidden md:inline-block">|</span>
+            <a className="text-md cursor-pointer border-b-2 border-pink-500 mx-2">
               LinkedIn
             </a>
-            <span className="hidden md:inline">|</span>
-            <a className="text-md cursor-pointer border-b-2 border-pink-500 mx-2 hidden md:inline">
+            <span className="mx-2 hidden md:inline-block">|</span>
+            <a className="text-md cursor-pointer border-b-2 border-pink-500 mx-2">
               Twitter
             </a>
-            <span className="hidden md:inline">|</span>
-            <a className="text-md cursor-pointer border-b-2 border-pink-500 mx-2 hidden md:inline">
+            <span className="mx-2 hidden md:inline-block">|</span>
+            <a className="text-md cursor-pointer border-b-2 border-pink-500 mx-2">
               Whatsapp
             </a>
           </p>
@@ -152,7 +152,7 @@ export default function Content() {
             className="w-full object-cover shadow-lg mb-4 md:rounded-lg md:mt-24"
           />
 
-          <div className="flex justify-center items-center space-x-4 my-4  md:hidden ">
+          <div className="flex justify-center items-center space-x-4 my-4  ">
             <FontAwesomeIcon
               icon={faEnvelope}
               className="text-xl text-gray-500 cursor-pointer hover:text-pink-500"
